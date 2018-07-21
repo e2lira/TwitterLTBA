@@ -10,7 +10,7 @@ import LBTAComponents
 
 class HomeDatasource: Datasource {
     
-    let words = ["user1", "user2", "user3","user4"]
+    let words = ["user1", "user2", "user3"]
     
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [FooterCell.self]
