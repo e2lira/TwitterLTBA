@@ -39,4 +39,10 @@ class HomeDatasource: Datasource {
     override func numberOfItems(_ section: Int) -> Int {
         return users.count
     }
+    
+//     Para incrementar el número de secciones en el collectionVie
+    override func numberOfSections() -> Int {
+        return 2 
+    }
+    
 }

@@ -22,8 +22,15 @@ class FooterCell: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
+//        Para adicionar un rectangulo blanco dentro del footer y simule el espacio gris
+        let whiteBackgroundColor = UIView()
+        whiteBackgroundColor.backgroundColor = .white
+        
+        addSubview(whiteBackgroundColor)
         addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        
+        whiteBackgroundColor.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 14, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 14, rightConstant: 0, widthConstant: 0, heightConstant: 0)
     }
 }
 
@@ -37,6 +44,7 @@ class HeaderCell: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
+        backgroundColor = .white
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
         
