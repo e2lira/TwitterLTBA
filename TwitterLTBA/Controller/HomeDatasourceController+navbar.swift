@@ -43,10 +43,19 @@ extension HomeDatasourceController {
         
         navigationItem.titleView = titleImageView
         
-        // Poniendo la Barra de navegacion en blanco
+//        Poniendo la Barra de navegacion en blanco
         navigationController?.navigationBar.backgroundColor = .white
         navigationController?.navigationBar.isTranslucent = false
         
+//        Para eliminar la línea gris entre el NavigationBar
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        let navBarSeparatorView = UIView()
+        navBarSeparatorView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
+        
+        view.addSubview(navBarSeparatorView)
+        navBarSeparatorView.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0.5)
     }
     
 }

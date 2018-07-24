@@ -19,6 +19,7 @@ class HomeDatasource: Datasource {
     }()
     
 //    let words = ["user1", "user2", "user3"]
+    let tweets = ["tweet1","tweet2"]
     
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [FooterCell.self]
@@ -28,8 +29,9 @@ class HomeDatasource: Datasource {
         return [HeaderCell.self]
     }
     
+//    Registrar las Clases para la vista de cada celda
     override func cellClasses() -> [DatasourceCell.Type] {
-        return[UserCell.self]
+        return[UserCell.self, TweetCell.self]
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
@@ -37,6 +39,9 @@ class HomeDatasource: Datasource {
     }
     
     override func numberOfItems(_ section: Int) -> Int {
+        if (section == 1){
+            return tweets.count
+        }
         return users.count
     }
     
