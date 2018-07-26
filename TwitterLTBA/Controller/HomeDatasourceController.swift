@@ -11,6 +11,11 @@ import LBTAComponents
 
 class HomeDatasourceController: DatasourceController {
     
+//    Para que se transforme la vista al rotar el dispositivo, se manda a llamar 
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionViewLayout.invalidateLayout()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = UIColor(r: 232, g: 235, b: 241)
