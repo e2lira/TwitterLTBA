@@ -9,6 +9,8 @@ target 'TwitterLTBA' do
 
   pod 'LBTAComponents', '~> 1.0.2'	
 
+  pod 'TRON', '~> 4.0'	
+
   target 'TwitterLTBATests' do
     inherit! :search_paths
     # Pods for testing
