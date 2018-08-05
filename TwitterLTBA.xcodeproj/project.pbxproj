@@ -21,6 +21,7 @@
 		6D60F67C21004E4200AABBCF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D60F67B21004E4200AABBCF /* HomeDatasource.swift */; };
 		6DC6331D2103FF3F00F861D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6331C2103FF3F00F861D1 /* User.swift */; };
 		6DC6331F2104056C00F861D1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC6331E2104056C00F861D1 /* UserCell.swift */; };
+		6DD36AB92117BFD500D044BA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD36AB82117BFD500D044BA /* Service.swift */; };
 		6DD81C39210522E000483382 /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD81C38210522E000483382 /* HomeDatasourceController+navbar.swift */; };
 		8697649516121C9D46CE69EB /* Pods_TwitterLTBAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382AF1259134CAB45B364C75 /* Pods_TwitterLTBAUITests.framework */; };
 		DD2C4776F4F411F99A289793 /* Pods_TwitterLTBATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC395C1F8B4134560D54DE23 /* Pods_TwitterLTBATests.framework */; };
@@ -69,6 +70,7 @@
 		6D60F67B21004E4200AABBCF /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		6DC6331C2103FF3F00F861D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6DC6331E2104056C00F861D1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6DD36AB82117BFD500D044BA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		6DD81C38210522E000483382 /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
 		A6D07616FC01A9FE364A1D41 /* Pods-TwitterLTBAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterLTBAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterLTBAUITests/Pods-TwitterLTBAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CEDA8CA7D3A802776C605F3C /* Pods-TwitterLTBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterLTBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterLTBA/Pods-TwitterLTBA.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		6D5E596E20FC1812000A2ADB /* TwitterLTBA */ = {
 			isa = PBXGroup;
 			children = (
+				6DD36AB72117BFC700D044BA /* Service */,
 				6D60F67821004D1C00AABBCF /* View */,
 				6D60F67721004D1500AABBCF /* Controller */,
 				6D60F67621004D0300AABBCF /* Model */,
@@ -188,6 +191,14 @@
 				6D2573832106C163004C0601 /* TweetCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6DD36AB72117BFC700D044BA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6DD36AB82117BFD500D044BA /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BEBD7C341DA89E2BC6413F60 /* Pods */ = {
@@ -433,6 +444,7 @@
 				6D5E59A120FC1A3F000A2ADB /* HomeController.swift in Sources */,
 				6D60F6752100019C00AABBCF /* HomeDatasourceController.swift in Sources */,
 				6D5E597820FC1812000A2ADB /* TwitterLTBA.xcdatamodeld in Sources */,
+				6DD36AB92117BFD500D044BA /* Service.swift in Sources */,
 				6D60F67C21004E4200AABBCF /* HomeDatasource.swift in Sources */,
 				6D5E597020FC1812000A2ADB /* AppDelegate.swift in Sources */,
 				6D2573842106C163004C0601 /* TweetCell.swift in Sources */,

@@ -7,16 +7,26 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
-class HomeDatasource: Datasource {
+class HomeDatasource: Datasource, JSONDecodable {
     
-    let users: [User]={
-        let edgarUser = User(name: "Edgar Lira", username: "@e2lira", bioText: "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS App´s!",profileImage: #imageLiteral(resourceName: "profile_image"))
-        let sebasUser = User(name: "Sebastián Elias", username: "@SebasElias", bioText: "Sebastián esta muy contento de tener su nueva actiivdad ", profileImage: #imageLiteral(resourceName: "profile_sebas"))
-        let kindleCourseUser = User(name: "Kindle Course User", username: "@kindleCourse", bioText: "Este es un curso para poder desarrollar una App de Twitter, usando elementos como CollectionViewController y CollectionTableView, es objetivo es adquirir abilidades para desarrollar app en iOS. Este es un curso para poder desarrollar una App de Twitter, usando elementos como CollectionViewController y CollectionTableView, es objetivo es adquirir abilidades para desarrollar app en iOS", profileImage: #imageLiteral(resourceName: "profile_image"))
+    let users: [User]
+    
+    required init(json: JSON) throws {
+        var users = [User]()
+        let array = json["users"].array
+        for userJson in array!{
+            let name = userJson["name"].stringValue
+            let username = userJson["username"].stringValue
+            let bio = userJson["bio"].stringValue
+            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+            users.append(user)
+        }
         
-        return [edgarUser, sebasUser, kindleCourseUser]
-    }()
+        self.users = users
+    }
     
 //    let words = ["user1", "user2", "user3"]
 //    let tweets = ["tweet1","tweet2"]

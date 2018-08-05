@@ -13,17 +13,19 @@
 		0C9A86B3C1093986B69D4F9DC210D5C7 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDA47302FDECD9061AD5D4A01CC67D /* APIRequest.swift */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8E857472FF8682A72698EB7A3D95D /* Timeline.swift */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F69A90D752CEC5464B62FD1988C40F39 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205C28E87E8C8C2D7D5A4BDCF1F87D7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
+		20BD2CF211B750E0AC068B7EA2055814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
+		2298CB766746FDEA79798E2A664D0BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
 		231C45E738FAA7A40EF3E9E990203B1C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24296F49D19BE50D11888CFA850E9EF /* Alamofire.framework */; };
 		235981CDE9F5AAD91F538E368BC6B849 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B5CA34D0185A96FA640C965E199E2F /* Plugin.swift */; };
+		23B124074D43BF9ED796D759E5867A71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
 		2E083D9FBA1A9494DA1058C17E1DCA60 /* DiscardableImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED71C8BF4994664D17959730812913 /* DiscardableImageCacheItem.swift */; };
-		2E796C2F8CBD81CF53D348103BB3DCBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		35082392A9A41FCD4EAA61BED1A16E86 /* NSMutableAttributedString+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156549D0E2A12D56E5FC418E8B043D50 /* NSMutableAttributedString+Helper.swift */; };
 		35D9EBC56AE39653B6D272A659F5F374 /* NetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9234870D87C989CBEB450152A2F06 /* NetworkActivityPlugin.swift */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29B7C5C29365D17EC1F8EFBC817E2 /* TaskDelegate.swift */; };
 		37B98DD36F44A62004105310CD66858C /* DefaultCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27D6A7D96B0A9535205B3FB2692366 /* DefaultCells.swift */; };
 		3931B2F6A6B8DAF241A7786B60E40F0A /* UIButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CA12E64F7C9E85F0B25E92B25F730 /* UIButton+Helper.swift */; };
 		3B42527CC883BD96AB7F931DEB0D9002 /* Pods-TwitterLTBA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B19CB4F812118804A06EE1F1DCCE86 /* Pods-TwitterLTBA-dummy.m */; };
-		4F1A45E9FC0AE2B10F672AFF4ECCCE99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		502AF04CB4CDDD500560035A06FEE6B1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470531B009777EC0160DC1E8B98E02C /* APIError.swift */; };
 		51B35B57D1673EB6E2E10B278E540D49 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0EC74C691AC5FE81E21053351EF33 /* SwiftyJSON.framework */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBC133883BCAAD83520631BED98029 /* Request.swift */; };
@@ -33,37 +35,34 @@
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79CE22F6B3C7D4BFAB8901B3083709 /* ServerTrustPolicy.swift */; };
 		63F4DCEA9155E09B0A4531D3A8373A64 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068536B6A5B5C531C96FA9B09F55A718 /* EmptyResponse.swift */; };
 		6B7010598E0C4F033B4F029E9E7F5CC6 /* TRON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755CD6AE712AC602B34CA88B459D71E7 /* TRON.swift */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8416C459EDD632C13F9BC3AFAA6C345 /* SessionDelegate.swift */; };
 		7BB4D97A26767E1133EBA0B96766E51C /* LBTAComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 249EB696EBF58D8B151812491159C96C /* LBTAComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894E26ABC9E7FBE3BB1DBDB0DF1C985 /* Result.swift */; };
-		7E7D0DF963A5E54CE93CE55F00CF5CC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		81361053E21AF28BB0F9D8580CBFC3FB /* Pods-TwitterLTBATests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9349442556201A77BF827B1DD49DB179 /* Pods-TwitterLTBATests-dummy.m */; };
 		8328C8198F54329E00570F05BACC94ED /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B5CD5F38492BB5FAA0B1FB4D4620CD /* Datasource.swift */; };
-		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
+		889F3EB6B38503D7695D3BC42CA57D7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5DE1B268B3A5198387AE918D6A6387 /* UIKit.framework */; };
 		8B5B0C39F870F00A5A282C7566326260 /* DownloadAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5EE5B0F758D214260DAF259EBC8D2 /* DownloadAPIRequest.swift */; };
 		8D8F13A9F148B708AEEE784B2D27B69B /* UploadAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC11214D119860F9D09806E40326A16 /* UploadAPIRequest.swift */; };
 		8DBB8E9521A8F540E337C4242DB8299A /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212387ED619D801C1BDCF051E94D052 /* UIImage+Helper.swift */; };
 		90FDC549107422AA74DD62442934A22D /* Pods-TwitterLTBATests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F83C36D6DC9DB563C52B5DB9AD16E7C /* Pods-TwitterLTBATests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9281A5EA108D969627E8D88B0D8BB50C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C15D63F187097DB510194B8751899ACA /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		983E73BD28880EBCE2CFE756BEA786F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A5673522D5E7A42F6B34A549E4C1B /* AFError.swift */; };
 		A0B1B6264A657334BF9C3B429AEC65C9 /* LBTATextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802B8099A53AF8DB11154E14BD6F4BDF /* LBTATextView.swift */; };
-		A1C4385F2C3B1121683C1FDDCD6041C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C23D0FDED8E18266453F5A4D00F64 /* NetworkReachabilityManager.swift */; };
 		A77A552056199071A37408165091C192 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DCFA8A3F76F7D94F8051DADA52CFCD /* Serialization.swift */; };
 		A85404D18E54AAEA12FBBA940640A8F4 /* Pods-TwitterLTBAUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0BB39FCD994D5BB9A0A4D6380E125F /* Pods-TwitterLTBAUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E74E81FDD1B2DB0567BC13C0F902C6 /* Alamofire-dummy.m */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86A2DEE9E9B212D14DC9174653A5F9 /* SessionManager.swift */; };
+		B049ABE42C9A22040B87ADA87E48074A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
 		B12EDCEDCBEAD32F48C9E8FCE2DB3587 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41A74519054D1EFFCF2FC3575F62387 /* NetworkLoggerPlugin.swift */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFC4EC8F449F3CD59047922B5098A6 /* MultipartFormData.swift */; };
-		B9C1E962BF3F3744F14E5D77FC07E361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B2941960934DF975969FD71B2BB /* Validation.swift */; };
 		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E20CD828FE5232DECE3213CFD39385 /* ParameterEncoding.swift */; };
 		C15E4DD8E4D60E2EDE5C2442B3A4F73B /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEDD6ABD730C2D5D5A61C86EC8F8DF /* CachedImageView.swift */; };
 		C70FC7E324AD58672D1A89E128A1276E /* TRON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCED323204454429B4B4A505306CA16 /* TRON-dummy.m */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31D5F23C5B05092401EF59D75ECAD5 /* Response.swift */; };
 		CBB7CE288B536CC7C0997EDD22379AA3 /* SwiftyJSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782D5EE32598FA10DF87CE67B9FF19C /* SwiftyJSONDecodable.swift */; };
-		CC1E7E9D11E24724B4107722FBEE404A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E0E2A9A29167D416D14AA7315CA8F7 /* UIKit.framework */; };
 		CFE9838563F8E8B3991BE679E3E5FC93 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD1E6D6898D31F9E787F2CCAA2194 /* BaseRequest.swift */; };
 		D5DE672DF95FA5ECC0AE9262556BE520 /* TRON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F23A5890FB482E567E71F915A2BD89E2 /* TRON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D819EF926E87E1334F0DEF11BA47B53D /* Pods-TwitterLTBAUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B97B5C7BB69A9939676C49C9B9BC39 /* Pods-TwitterLTBAUITests-dummy.m */; };
@@ -72,6 +71,7 @@
 		E2F03FADC2821A9AE79BC89B92C53EA6 /* LBTAComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C478B6777D187531242E59F440952FAE /* LBTAComponents-dummy.m */; };
 		E925F84F7677DA272303B23BA96321D3 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7405DF54641859F62B4C608A9A276EC /* UIView+Anchors.swift */; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605B7604778A9FC65D4B1DE136041FA0 /* Notifications.swift */; };
+		F2A255EB305DEDAD9278D94162955D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */; };
 		F4FD3EA56583F193EDC4FE36B9D977D6 /* APIStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7352BB78D49266C2EFD12ED77406 /* APIStub.swift */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F78F81ECFA5DE8B2157D5987D70FE /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55444EF45E821AA9F63F3D9E3482144 /* Alamofire.swift */; };
@@ -151,6 +151,7 @@
 		156549D0E2A12D56E5FC418E8B043D50 /* NSMutableAttributedString+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Helper.swift"; path = "LBTAComponents/Classes/NSMutableAttributedString+Helper.swift"; sourceTree = "<group>"; };
 		1983372B052D9D914B3A2E4EF9F4D99F /* Pods-TwitterLTBAUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterLTBAUITests-resources.sh"; sourceTree = "<group>"; };
 		1CC252EA882DFAAA32E32F72F1BC2402 /* Pods_TwitterLTBA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwitterLTBA.framework; path = "Pods-TwitterLTBA.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		21CD6150F59ED822BEA2F17B38A99862 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EEB4BCBA4BDD1F524F1F6BB21C7210 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		2204FCA4E7FFEDC62CD87CAF87DF8E31 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +169,7 @@
 		3C8B7352BB78D49266C2EFD12ED77406 /* APIStub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIStub.swift; path = Source/APIStub.swift; sourceTree = "<group>"; };
 		3E8569ED5F628C83242032EECB8B5A56 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		3FB5EE5B0F758D214260DAF259EBC8D2 /* DownloadAPIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadAPIRequest.swift; path = Source/DownloadAPIRequest.swift; sourceTree = "<group>"; };
+		4C5DE1B268B3A5198387AE918D6A6387 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		575C1B9FE7294BBA5C633145E0B338BA /* Pods-TwitterLTBAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterLTBAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5857CD8AA0837F911273FC1ADCAF59B5 /* Pods-TwitterLTBATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterLTBATests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A519FECA50E0AC72557E61094F05527 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,7 +199,6 @@
 		8F86A2DEE9E9B212D14DC9174653A5F9 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		9349442556201A77BF827B1DD49DB179 /* Pods-TwitterLTBATests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterLTBATests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D7B11ED37727C623D48D23E36B8677C /* Pods-TwitterLTBATests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterLTBATests-resources.sh"; sourceTree = "<group>"; };
 		9F6E5188725D1635E6C8C11C4558578A /* Pods-TwitterLTBATests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterLTBATests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F83C36D6DC9DB563C52B5DB9AD16E7C /* Pods-TwitterLTBATests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwitterLTBATests-umbrella.h"; sourceTree = "<group>"; };
@@ -248,7 +249,6 @@
 		F24296F49D19BE50D11888CFA850E9EF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CDA47302FDECD9061AD5D4A01CC67D /* APIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = Source/APIRequest.swift; sourceTree = "<group>"; };
 		F69A90D752CEC5464B62FD1988C40F39 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		F8E0E2A9A29167D416D14AA7315CA8F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8E74E81FDD1B2DB0567BC13C0F902C6 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		FA27D6A7D96B0A9535205B3FB2692366 /* DefaultCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultCells.swift; path = LBTAComponents/Classes/DefaultCells.swift; sourceTree = "<group>"; };
 		FEE0EC74C691AC5FE81E21053351EF33 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,7 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7D0DF963A5E54CE93CE55F00CF5CC4 /* Foundation.framework in Frameworks */,
+				23B124074D43BF9ED796D759E5867A71 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E796C2F8CBD81CF53D348103BB3DCBA /* Foundation.framework in Frameworks */,
+				205C28E87E8C8C2D7D5A4BDCF1F87D7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1A45E9FC0AE2B10F672AFF4ECCCE99 /* Foundation.framework in Frameworks */,
+				B049ABE42C9A22040B87ADA87E48074A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +284,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */,
+				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C4385F2C3B1121683C1FDDCD6041C4 /* Foundation.framework in Frameworks */,
+				20BD2CF211B750E0AC068B7EA2055814 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C1E962BF3F3744F14E5D77FC07E361 /* Foundation.framework in Frameworks */,
+				F2A255EB305DEDAD9278D94162955D21 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				231C45E738FAA7A40EF3E9E990203B1C /* Alamofire.framework in Frameworks */,
-				983E73BD28880EBCE2CFE756BEA786F3 /* Foundation.framework in Frameworks */,
+				2298CB766746FDEA79798E2A664D0BAB /* Foundation.framework in Frameworks */,
 				51B35B57D1673EB6E2E10B278E540D49 /* SwiftyJSON.framework in Frameworks */,
-				CC1E7E9D11E24724B4107722FBEE404A /* UIKit.framework in Frameworks */,
+				889F3EB6B38503D7695D3BC42CA57D7C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,15 +350,6 @@
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		2CECA4834411BE24A10396AA384961B3 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				93BD5591806951DB5ADC0F955382A51C /* Foundation.framework */,
-				F8E0E2A9A29167D416D14AA7315CA8F7 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		3A23195D99EE65BD81604E3CA4EF77D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,7 +384,7 @@
 			children = (
 				F24296F49D19BE50D11888CFA850E9EF /* Alamofire.framework */,
 				FEE0EC74C691AC5FE81E21053351EF33 /* SwiftyJSON.framework */,
-				2CECA4834411BE24A10396AA384961B3 /* iOS */,
+				D9B177956163613AEF0A835154D6FD82 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -558,6 +549,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LBTAComponents";
+			sourceTree = "<group>";
+		};
+		D9B177956163613AEF0A835154D6FD82 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1D1A099AA3234368F9DFDED5FC0E58C1 /* Foundation.framework */,
+				4C5DE1B268B3A5198387AE918D6A6387 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		DA85A66DA0F86053F02B5C7A441876ED /* Products */ = {
@@ -988,11 +988,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
@@ -1024,11 +1020,7 @@
 				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
 				PRODUCT_MODULE_NAME = LBTAComponents;
 				PRODUCT_NAME = LBTAComponents;
@@ -1062,11 +1054,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBATests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBATests/Pods-TwitterLTBATests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1101,11 +1089,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBA/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBA/Pods-TwitterLTBA.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1141,11 +1125,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBAUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBAUITests/Pods-TwitterLTBAUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1179,11 +1159,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBAUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBAUITests/Pods-TwitterLTBAUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1281,11 +1257,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBA/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBA/Pods-TwitterLTBA.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1320,11 +1292,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1415,11 +1383,7 @@
 				INFOPLIST_FILE = "Target Support Files/TRON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TRON/TRON.modulemap";
 				PRODUCT_MODULE_NAME = TRON;
 				PRODUCT_NAME = TRON;
@@ -1453,11 +1417,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TwitterLTBATests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TwitterLTBATests/Pods-TwitterLTBATests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1490,11 +1450,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
@@ -1527,11 +1483,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1563,11 +1515,7 @@
 				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
 				PRODUCT_MODULE_NAME = LBTAComponents;
 				PRODUCT_NAME = LBTAComponents;
@@ -1599,11 +1547,7 @@
 				INFOPLIST_FILE = "Target Support Files/TRON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TRON/TRON.modulemap";
 				PRODUCT_MODULE_NAME = TRON;
 				PRODUCT_NAME = TRON;

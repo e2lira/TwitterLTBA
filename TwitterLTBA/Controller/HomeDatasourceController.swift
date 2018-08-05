@@ -7,6 +7,8 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
 
 class HomeDatasourceController: DatasourceController {
@@ -21,9 +23,17 @@ class HomeDatasourceController: DatasourceController {
         collectionView?.backgroundColor = UIColor(r: 232, g: 235, b: 241)
         setupNavigationBarItems()
         
-        let homeDatasource = HomeDatasource()
-        self.datasource =  homeDatasource
+        // Para llenar el DatasourceController
+//        let homeDatasource = HomeDatasource()
+//        self.datasource =  homeDatasource
+        
+//        El objeto singleton es cargado una sola vez y cuando termina la carga retorna el objeto 'homeDatasource'
+        Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
+            self.datasource = homeDatasource
+        }
+        
     }
+    
     
 //  Para quitar el espacio entre celdas
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
