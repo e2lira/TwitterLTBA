@@ -16,8 +16,8 @@ class UserCell: DatasourceCell {
             print(user.name)
             nameLabel.text = user.name
             userNameLabel.text = user.username
-            bioTextView.text = user.bioText
-            profileImageView.image = user.profileImage
+            bioTextView.text = user.bio
+            profileImageView.image = UIImage(named: user.profileImageUrl)
         }
     }
     

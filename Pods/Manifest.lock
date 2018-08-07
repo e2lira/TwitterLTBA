@@ -17,7 +17,7 @@ DEPENDENCIES:
   - TRON (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - LBTAComponents
     - SwiftyJSON
@@ -31,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5a756207846f5b5e87238c79ac903ca8c61d900d
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

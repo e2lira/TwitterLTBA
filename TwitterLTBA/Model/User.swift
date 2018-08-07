@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-struct User {
+struct User: Decodable {
     let name: String
     let username: String
-    let bioText: String
-    let profileImage: UIImage
+    let bio: String
+    let profileImageUrl: String
+    
+    init(json: JSON){
+        self.name = json["name"].stringValue
+        self.username = json["username"].stringValue
+        self.bio = json["bio"].stringValue
+        self.profileImageUrl = ""
+    }
 }

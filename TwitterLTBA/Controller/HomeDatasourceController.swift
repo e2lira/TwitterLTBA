@@ -28,10 +28,14 @@ class HomeDatasourceController: DatasourceController {
 //        self.datasource =  homeDatasource
         
 //        El objeto singleton es cargado una sola vez y cuando termina la carga retorna el objeto 'homeDatasource'
-        Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
-            self.datasource = homeDatasource
+//        Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
+//            self.datasource = homeDatasource
+//        }
+        ServiceSwift4.sharedInstace.fetchHomeFeed { (homeDatasource) in
+            DispatchQueue.main.sync(execute: {
+                 self.datasource = homeDatasource
+            })
         }
-        
     }
     
     
@@ -47,7 +51,7 @@ class HomeDatasourceController: DatasourceController {
             let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12
             let size = CGSize(width: approximateWidthOfBioTextView, height: 1000) // valor arbitrario
             let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)] // the same value of bioTextView
-            let estimatedFrame = NSString(string: user.bioText).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+            let estimatedFrame = NSString(string: user.bio).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
             
             return CGSize(width: view.frame.width, height: estimatedFrame.height + 66)
         }

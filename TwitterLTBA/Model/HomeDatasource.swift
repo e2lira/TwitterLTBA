@@ -11,33 +11,15 @@ import TRON
 import SwiftyJSON
 
 class HomeDatasource: Datasource, JSONDecodable {
-    
+//    se deben de llenar los elementos mediante users y tweets
     let users: [User]
+    let tweets : [Tweet]
     
-    required init(json: JSON) throws {
-        var users = [User]()
-        let array = json["users"].array
-        for userJson in array!{
-            let name = userJson["name"].stringValue
-            let username = userJson["username"].stringValue
-            let bio = userJson["bio"].stringValue
-            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
-            users.append(user)
-        }
-        
-        self.users = users
+    init(infoTweet: InfoTweet){
+        self.users = infoTweet.users
+        self.tweets = infoTweet.tweets
     }
     
-//    let words = ["user1", "user2", "user3"]
-//    let tweets = ["tweet1","tweet2"]
-    let tweets : [Tweet]={
-        let edgarUser = User(name: "Edgar Lira", username: "@e2lira", bioText: "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS App´s!",profileImage: #imageLiteral(resourceName: "profile_image"))
-        let tweet = Tweet(user: edgarUser, message: "Welcome to episode 9 of the Twitter Series, really hope you guys are enjoying the series so far. I really need a logn text block to render aout so we're going to stop here.")
-        
-        let tweet2 = Tweet(user: edgarUser, message: "Welcome to episode 9 of the Twitter Series, really hope you guys are enjoying the series so far. I really need a logn text block to render aout so we're going to stop here.")
-        
-       return [tweet, tweet2]
-    }()
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [FooterCell.self]
     }
