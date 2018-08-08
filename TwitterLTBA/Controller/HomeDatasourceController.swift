@@ -73,17 +73,25 @@ class HomeDatasourceController: DatasourceController {
     
     // Asigna el tamaño de la celda principal
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if let user = self.datasource?.item(indexPath) as? User {
-//          print(user.bioText)
-            let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12
-            let size = CGSize(width: approximateWidthOfBioTextView, height: 1000) // valor arbitrario
-            let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)] // the same value of bioTextView
-            let estimatedFrame = NSString(string: user.bio).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-            
-            return CGSize(width: view.frame.width, height: estimatedFrame.height + 66)
+        if (indexPath.section == 0){
+            guard let user = self.datasource?.item(indexPath) as? User else { return .zero }
+            let estimatedHeight = estimatedHeightForText(user.bio)
+            return CGSize(width: view.frame.width, height: estimatedHeight + 66)
+        } else if (indexPath.section == 1){
+            guard let tweet = self.datasource?.item(indexPath) as? Tweet  else { return .zero }
+            let estimatedHeight = estimatedHeightForText(tweet.message)
+            return CGSize(width: view.frame.width, height: estimatedHeight + 74)
         }
-        
         return CGSize(width: view.frame.width, height: 150)
+    }
+    
+    private func estimatedHeightForText(_ text: String) -> CGFloat{
+        let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12
+        let size = CGSize(width: approximateWidthOfBioTextView, height: 1000) // valor arbitrario
+        let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)] // the same value of bioTextView
+        let estimatedFrame = NSString(string: text).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+        
+        return estimatedFrame.height
     }
     
     // Asigna el tamaño de la celda header

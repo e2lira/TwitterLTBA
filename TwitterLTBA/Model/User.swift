@@ -19,6 +19,6 @@ struct User: Decodable {
         self.name = json["name"].stringValue
         self.username = json["username"].stringValue
         self.bio = json["bio"].stringValue
-        self.profileImageUrl = ""
+        self.profileImageUrl = json["profileImageUrl"].stringValue
     }
 }

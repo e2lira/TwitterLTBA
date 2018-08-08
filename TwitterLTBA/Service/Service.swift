@@ -18,7 +18,7 @@ struct Service {
     // completion block se ejecuta una vez que termina la descarga del request, permite pasar parametros
     func fetchHomeFeed(completion: @escaping (HomeDatasource?, Error?) -> ()){
         print("Fetcing home feed")
-        let request: APIRequest<HomeDatasource, JSONError> = tron.swiftyJSON.request("/twitter/home_with_error")
+        let request: APIRequest<HomeDatasource, JSONError> = tron.swiftyJSON.request("/twitter/home")
         request.perform(withSuccess: { (homeDatasource) in
             print("Successfully decode json object count: ", homeDatasource.users.count)
             completion(homeDatasource, nil)

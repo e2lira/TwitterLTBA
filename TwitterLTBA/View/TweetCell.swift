@@ -13,6 +13,9 @@ class TweetCell:  DatasourceCell {
     override var datasourceItem: Any?{
         didSet{
             guard let tweet = datasourceItem as? Tweet else { return }
+            
+            profileImageView.loadImage(urlString: tweet.user.profileImageUrl)
+            
 //            Para concatenar texto y agregarle formato
             let attributeText = NSMutableAttributedString(string: tweet.user.name, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 16)])
 //            para adicionar un espacio pequeño entre el nombre y el usuario, string interpolacion
@@ -40,8 +43,8 @@ class TweetCell:  DatasourceCell {
         return tv
     }()
     
-    let profileImageView: UIImageView={
-        let imageView = UIImageView()
+    let profileImageView: CachedImageView={
+        let imageView = CachedImageView()
         imageView.image = #imageLiteral(resourceName: "profile_image")
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
