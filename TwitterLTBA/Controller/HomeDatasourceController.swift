@@ -12,6 +12,15 @@ import SwiftyJSON
 
 
 class HomeDatasourceController: DatasourceController {
+
+    let errorMessageLabel: UILabel={
+       let label = UILabel()
+       label.text = "Apologies something were wrong. Please try again later..."
+        label.textAlignment = .center
+        label.numberOfLines = 0 // Para que se muestre en dos líneas
+        label.isHidden = true
+        return label
+    }()
     
 //    Para que se transforme la vista al rotar el dispositivo, se manda a llamar 
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -23,19 +32,37 @@ class HomeDatasourceController: DatasourceController {
         collectionView?.backgroundColor = UIColor(r: 232, g: 235, b: 241)
         setupNavigationBarItems()
         
+        view.addSubview(errorMessageLabel)
+        errorMessageLabel.fillSuperview() // LBTA methods call, para acomodar con los anchor
+        
         // Para llenar el DatasourceController
 //        let homeDatasource = HomeDatasource()
 //        self.datasource =  homeDatasource
         
 //        El objeto singleton es cargado una sola vez y cuando termina la carga retorna el objeto 'homeDatasource'
-//        Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
-//            self.datasource = homeDatasource
-//        }
-        ServiceSwift4.sharedInstace.fetchHomeFeed { (homeDatasource) in
-            DispatchQueue.main.sync(execute: {
-                 self.datasource = homeDatasource
-            })
+        Service.sharedInstance.fetchHomeFeed { (homeDatasource, err) in
+            if let err = err { // _ si no se va usar la variable
+                self.errorMessageLabel.isHidden = false
+                
+                if let apiError = err as? APIError<Service.JSONError>{
+                    if apiError.response?.statusCode == 404 {
+                        self.errorMessageLabel.text = "The service is not available!"
+                    }
+                    if apiError.response?.statusCode == 1 {
+                        self.errorMessageLabel.text = "Internal server error!"
+                    }
+                }
+            }
+            self.datasource = homeDatasource
         }
+//        ServiceSwift4.sharedInstace.fetchHomeFeed { (homeDatasource, err) in
+//            DispatchQueue.main.sync(execute: {
+//                if let _ = err { // _ si no se va usar la variable
+//                      self.errorMessageLabel.isHidden = false
+//                }
+//                self.datasource = homeDatasource
+//            })
+//        }
     }
     
     

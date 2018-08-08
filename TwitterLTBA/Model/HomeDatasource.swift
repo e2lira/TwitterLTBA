@@ -20,6 +20,16 @@ class HomeDatasource: Datasource, JSONDecodable {
         self.tweets = infoTweet.tweets
     }
     
+    required init(json: JSON) throws {
+        guard let userJsonArray = json["users"].array, let tweetJsonArray = json["tweets"].array else {
+            throw NSError(domain: "com.letsbuildthatapp", code: 1, userInfo: [NSLocalizedDescriptionKey: "'users or tweets' are not valid in JSON"])
+        }
+       
+        
+        self.users = userJsonArray.map{User(json: $0)}
+        self.tweets = tweetJsonArray.map{Tweet(json: $0)}
+    }
+    
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [FooterCell.self]
     }

@@ -16,14 +16,15 @@ struct Service {
 //    Sigleton object, solamente se crea un objeto en toda la App
     static let sharedInstance = Service()
     // completion block se ejecuta una vez que termina la descarga del request, permite pasar parametros
-    func fetchHomeFeed(completion: @escaping (HomeDatasource) -> ()){
+    func fetchHomeFeed(completion: @escaping (HomeDatasource?, Error?) -> ()){
         print("Fetcing home feed")
-        let request: APIRequest<HomeDatasource, JSONError> = tron.swiftyJSON.request("/twitter/home")
+        let request: APIRequest<HomeDatasource, JSONError> = tron.swiftyJSON.request("/twitter/home_with_error")
         request.perform(withSuccess: { (homeDatasource) in
             print("Successfully decode json object count: ", homeDatasource.users.count)
-            completion(homeDatasource)
+            completion(homeDatasource, nil)
         }) { (err) in
-            print("Fail to fetch json", err)
+            completion(nil, err)
+            print("Fail to fetch json", err)    
         }
     }
     

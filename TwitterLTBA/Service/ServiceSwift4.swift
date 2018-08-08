@@ -10,16 +10,16 @@ import UIKit
 
 struct ServiceSwift4{
 
-    let urlStr = "https://api.letsbuildthatapp.com//twitter/home"
+    let urlStr = "https://api.letsbuildthatapp.com//twitter/home_with_error"
 
     static let sharedInstace = ServiceSwift4()
 
-    func fetchHomeFeed(completion: @escaping (HomeDatasource) -> ()){
+    func fetchHomeFeed(completion: @escaping (HomeDatasource?, Error?) -> ()){
         guard let url = URL(string: urlStr) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, err) in
             if err != nil{
-                print("Error en la conexión", err!)
+                completion(nil, err)
                 return
             }
             guard let dataResp = data else { return }
@@ -27,9 +27,10 @@ struct ServiceSwift4{
             do {
                 let infoTweet = try JSONDecoder().decode(InfoTweet.self, from: dataResp)
                 let homeDatasource = HomeDatasource(infoTweet: infoTweet)
-                completion(homeDatasource)
+                completion(homeDatasource, nil)
             } catch let jsonErr{
                 print("Error de serialización, descripcion: ", jsonErr)
+                completion(nil, jsonErr)
             }
             
         }.resume()
