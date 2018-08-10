@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct InfoTweet: Decodable{
-    
-    let users: [User]
-    let tweets: [Tweet]
-    
-}
+// : Decodable
+//struct InfoTweet: Decodable {
+//    
+//    let users: [User]
+//    let tweets: [Tweet]
+//    
+//}

@@ -10,24 +10,34 @@ import LBTAComponents
 import TRON
 import SwiftyJSON
 
+// Lesson 16 Generics and array extension
+extension Collection where Iterator.Element == JSON {
+    func decode<T: JSONDecodable>() throws -> [T] {
+        return try map({ try T(json: $0)})
+    }
+}
+
 class HomeDatasource: Datasource, JSONDecodable {
 //    se deben de llenar los elementos mediante users y tweets
     let users: [User]
     let tweets : [Tweet]
     
-    init(infoTweet: InfoTweet){
-        self.users = infoTweet.users
-        self.tweets = infoTweet.tweets
-    }
+//    init(infoTweet: InfoTweet){
+//        self.users = infoTweet.users
+//        self.tweets = infoTweet.tweets
+//    }
     
     required init(json: JSON) throws {
         guard let userJsonArray = json["users"].array, let tweetJsonArray = json["tweets"].array else {
             throw NSError(domain: "com.letsbuildthatapp", code: 1, userInfo: [NSLocalizedDescriptionKey: "'users or tweets' are not valid in JSON"])
         }
-       
         
-        self.users = userJsonArray.map{User(json: $0)}
-        self.tweets = tweetJsonArray.map{Tweet(json: $0)}
+//        self.users = userJsonArray.map{User(json: $0)}
+//        self.tweets = tweetJsonArray.map{Tweet(json: $0)}
+        // Generics and array extension
+        self.users = try userJsonArray.decode()
+        self.tweets = try tweetJsonArray.decode()
+        
     }
     
     override func footerClasses() -> [DatasourceCell.Type]? {

@@ -25,9 +25,10 @@ struct ServiceSwift4{
             guard let dataResp = data else { return }
             
             do {
-                let infoTweet = try JSONDecoder().decode(InfoTweet.self, from: dataResp)
-                let homeDatasource = HomeDatasource(infoTweet: infoTweet)
-                completion(homeDatasource, nil)
+//                let infoTweet = try JSONDecoder().decode(InfoTweet.self, from: dataResp)
+//                let homeDatasource = HomeDatasource(infoTweet: infoTweet)
+//                completion(homeDatasource, nil)
+                completion(nil, nil)
             } catch let jsonErr{
                 print("Error de serialización, descripcion: ", jsonErr)
                 completion(nil, jsonErr)
